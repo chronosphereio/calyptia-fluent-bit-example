@@ -1,4 +1,4 @@
-name: Fluent linter 
+name: Fluent linter / repeated include
 
 on:
     push:
@@ -15,4 +15,4 @@ jobs:
         uses: calyptia/fluent-linter-action@gg/adding-parsing-errors-as-annotations
         with:
           CALYPTIA_API_KEY: ${{ secrets.CALYPTIA_API_KEY }}
-          CONFIG_LOCATION_GLOB: 'examples/bad-set/fluent-bit.conf'
+          CONFIG_LOCATION_GLOB: 'examples/repeated-include/entry-point.conf'
